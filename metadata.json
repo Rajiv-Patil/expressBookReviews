@@ -1,0 +1,8 @@
+{
+  "name": "Express Book Reviews",
+  "description": "Book review application and REST API built with Express.js.",
+  "requestFramePermissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

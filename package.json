@@ -1,0 +1,13 @@
+{
+  "name": "express-book-reviews",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "final_project"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=final_project",
+    "build": "npm run build --workspace=final_project",
+    "start": "npm run start --workspace=final_project"
+  }
+}
