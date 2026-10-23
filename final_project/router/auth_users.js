@@ -35,7 +35,7 @@ regd_users.post("/login", (req, res) => {
         req.session.authorization = {
             accessToken, username
         };
-        return res.status(200).send("Customer successfully logged in");
+        return res.status(200).json({ message: "Login successful!" });
     } else {
         return res.status(208).json({ message: "Invalid Login. Check username and password" });
     }
@@ -84,4 +84,5 @@ regd_users.delete("/auth/review/:isbn", (req, res) => {
 
 module.exports.authenticated = regd_users;
 module.exports.isValid = isValid;
+module.exports.authenticatedUser = authenticatedUser;
 module.exports.users = users;
